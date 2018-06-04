@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-23 17:10:04 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.shjn.model.FundDetail" table="fund_detail" catalog="amac" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="fundId" type="java.lang.Long">
+            <column name="fund_id" />
+        </property>
+        <property name="fundNo" type="string">
+            <column name="fund_no" length="45">
+                <comment>&#187;&#249;&#189;&#240;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="establishDate" type="date">
+            <column name="establish_date" length="10">
+                <comment>&#179;&#201;&#193;&#162;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="putOnRecordDate" type="date">
+            <column name="put_on_record_date" length="10">
+                <comment>&#177;&#184;&#176;&#184;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="putOnRecordPhase" type="java.lang.Boolean">
+            <column name="put_on_record_phase">
+                <comment>&#187;&#249;&#189;&#240;&#177;&#184;&#176;&#184;&#189;&#215;&#182;&#206;
+                &#212;&#221;&#208;&#208;&#176;&#236;&#183;&#168;&#202;&#181;&#202;&#169;&#199;&#176;&#179;&#201;&#193;&#162;&#181;&#196;&#187;&#249;&#189;&#240;
+                0&#161;&#162;&#212;&#221;&#208;&#208;&#176;&#236;&#183;&#168;&#202;&#181;&#202;&#169;&#186;&#243;&#179;&#201;&#193;&#162;&#181;&#196;&#187;&#249;&#189;&#240;
+                1</comment>
+            </column>
+        </property>
+        <property name="fundType" type="string">
+            <column name="fund_type" length="45">
+                <comment>&#187;&#249;&#189;&#240;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="currency" type="string">
+            <column name="currency" length="45">
+                <comment>&#177;&#210;&#214;&#214;</comment>
+            </column>
+        </property>
+        <property name="managerType" type="java.lang.Integer">
+            <column name="manager_type">
+                <comment>&#185;&#220;&#192;&#237;&#192;&#224;&#208;&#205; &#202;&#220;&#205;&#208;&#185;&#220;&#192;&#237;
+                1&#161;&#162;&#215;&#212;&#206;&#210;&#185;&#220;&#192;&#237; 2&#161;&#162;&#185;&#203;&#206;&#202;&#185;&#220;&#192;&#237; 3</comment>
+            </column>
+        </property>
+        <property name="trusteeName" type="string">
+            <column name="trustee_name">
+                <comment>&#205;&#208;&#185;&#220;&#200;&#203;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="mainInvestment" type="string">
+            <column name="main_investment" length="2048">
+                <comment>&#214;&#247;&#210;&#170;&#205;&#182;&#215;&#202;&#193;&#236;&#211;&#242;</comment>
+            </column>
+        </property>
+        <property name="workingState" type="java.lang.Integer">
+            <column name="working_state">
+                <comment>&#212;&#203;&#215;&#247;&#215;&#180;&#204;&#172; &#213;&#253;&#212;&#218;&#212;&#203;&#215;&#247;
+                1&#161;&#162;&#209;&#211;&#198;&#218;&#199;&#229;&#197;&#204; 2&#161;&#162;&#204;&#225;&#199;&#176;&#199;&#229;&#197;&#204;
+                3&#161;&#162;&#213;&#253;&#179;&#163;&#199;&#229;&#197;&#204; 4&#161;&#162;&#183;&#199;&#213;&#253;&#179;&#163;&#199;&#229;&#197;&#204; 5</comment>
+            </column>
+        </property>
+        <property name="lastUpdated" type="date">
+            <column name="last_updated" length="10">
+                <comment>&#187;&#249;&#189;&#240;&#208;&#197;&#207;&#162;&#215;&#238;&#186;&#243;&#184;&#252;&#208;&#194;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="specialNote" type="string">
+            <column name="special_note">
+                <comment>
+                &#187;&#249;&#189;&#240;&#208;&#173;&#187;&#225;&#204;&#216;&#177;&#240;&#204;&#225;&#202;&#190;&#163;&#168;&#213;&#235;&#182;&#212;&#187;&#249;&#189;&#240;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="informationDisclosure" type="string">
+            <column name="information_disclosure">
+                <comment>&#208;&#197;&#207;&#162;&#197;&#251;&#194;&#182;&#199;&#233;&#191;&#246;</comment>
+            </column>
+        </property>
+        <property name="createTimestamp" type="timestamp">
+            <column name="create_timestamp" length="19" />
+        </property>
+        <property name="updateTimestamp" type="timestamp">
+            <column name="update_timestamp" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

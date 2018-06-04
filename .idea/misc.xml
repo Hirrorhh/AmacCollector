@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="keepSourceFolders" value="false" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://120.132.14.230/svn/hefu/hfservice/wuhan/AmacCollector/branches" />
+                  <option value="https://120.132.14.230/svn/hefu/hfservice/wuhan/AmacCollector/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://120.132.14.230/svn/hefu/hfservice/wuhan/AmacCollector/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

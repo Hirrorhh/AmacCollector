@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-23 17:10:04 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.shjn.model.Hmd" table="hmd" catalog="amac" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45">
+                <comment>&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="organization" type="string">
+            <column name="organization" length="45">
+                <comment>&#200;&#206;&#214;&#176;&#187;&#250;&#185;&#185;&#188;&#176;&#198;&#228;&#214;&#176;&#206;&#241;</comment>
+            </column>
+        </property>
+        <property name="disciplinary" type="string">
+            <column name="disciplinary" length="45">
+                <comment>&#188;&#205;&#194;&#201;&#180;&#166;&#183;&#214;</comment>
+            </column>
+        </property>
+        <property name="revocationTime" type="date">
+            <column name="revocation_time" length="10">
+                <comment>&#180;&#166;&#183;&#214;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="createTimestamp" type="timestamp">
+            <column name="create_timestamp" length="19" />
+        </property>
+        <property name="updateTimestamp" type="timestamp">
+            <column name="update_timestamp" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

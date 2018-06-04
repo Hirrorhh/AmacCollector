@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-23 17:10:04 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.shjn.model.FundAccountDetail" table="fund_account_detail" catalog="amac" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="fundAccountId" type="string">
+            <column name="fund_account_id" length="45">
+                <comment>&#215;&#168;&#187;&#167;ID</comment>
+            </column>
+        </property>
+        <property name="registerCode" type="string">
+            <column name="register_code" length="45">
+                <comment>&#177;&#184;&#176;&#184;&#177;&#224;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="manager" type="string">
+            <column name="manager" length="45">
+                <comment>&#185;&#220;&#192;&#237;&#200;&#203;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="trusteeName" type="string">
+            <column name="trustee_name" length="45">
+                <comment>&#205;&#208;&#185;&#220;&#200;&#203;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="registerDate" type="date">
+            <column name="register_date" length="10">
+                <comment>&#177;&#184;&#176;&#184;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="contractPeriod" type="string">
+            <column name="contract_period" length="45">
+                <comment>&#186;&#207;&#205;&#172;&#198;&#218;&#207;&#222;&#163;&#168;&#212;&#194;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="initialScale" type="java.lang.Double">
+            <column name="initial_scale" precision="22" scale="0">
+                <comment>&#198;&#240;&#202;&#188;&#185;&#230;&#196;&#163;&#163;&#168;&#210;&#218;&#212;&#170;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="classification" type="java.lang.Boolean">
+            <column name="classification">
+                <comment>&#202;&#199;&#183;&#241;&#183;&#214;&#188;&#182;</comment>
+            </column>
+        </property>
+        <property name="investorsNumber" type="java.lang.Integer">
+            <column name="investors_number">
+                <comment>&#179;&#201;&#193;&#162;&#202;&#177;&#205;&#182;&#215;&#202;&#213;&#223;&#202;&#253;&#193;&#191;</comment>
+            </column>
+        </property>
+        <property name="otherProductType" type="string">
+            <column name="other_product_type" length="45">
+                <comment>
+                &#183;&#199;&#215;&#168;&#207;&#238;&#215;&#202;&#178;&#250;&#185;&#220;&#192;&#237;&#188;&#198;&#187;&#174;&#178;&#250;&#198;&#183;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="createTimestamp" type="timestamp">
+            <column name="create_timestamp" length="19" />
+        </property>
+        <property name="updateTimestamp" type="timestamp">
+            <column name="update_timestamp" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

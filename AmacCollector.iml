@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file://C:/workspace/javaLib/json/commons-beanutils-1.9.2.jar" />
+    <libelement value="file://C:/workspace/javaLib/json/commons-collections-3.2.1.jar" />
+    <libelement value="file://C:/workspace/javaLib/json/commons-lang-2.6.jar" />
+    <libelement value="file://C:/workspace/javaLib/json/commons-lang3-3.4.jar" />
+    <libelement value="file://C:/workspace/javaLib/json/commons-logging-1.2.jar" />
+    <libelement value="file://C:/workspace/javaLib/json/ezmorph-1.0.6.jar" />
+    <libelement value="file://C:/workspace/javaLib/json/json-lib-2.4-jdk15.jar" />
+    <libelement value="file://C:/workspace/javaLib/json/jsoup-1.10.1.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/antlr-2.7.7.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/cdi-api-1.1.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/classmate-1.3.0.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/dom4j-1.6.1.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/el-api-2.2.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/geronimo-jta_1.1_spec-1.1.1.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/hibernate-commons-annotations-5.0.1.Final.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/hibernate-core-5.2.6.Final.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/jandex-2.0.3.Final.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/javassist-3.20.0-GA.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/javax.inject-1.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/jboss-logging-3.3.0.Final.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/jsr250-api-1.0.jar" />
+    <libelement value="file://C:/workspace/javaLib/hibernate/mysql-connector-java-5.1.39-bin.jar" />
+    <libelement value="file://C:/workspace/javaLib/log4j-1.2.17.jar" />
+    <libelement value="file://C:/workspace/javaLib/servlet-api.jar" />
+    <libelement value="file://C:/workspace/javaLib/jxl.jar" />
+    <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
+    <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.0" level="application_server_libraries" />
+  </component>
+</module>

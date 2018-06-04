@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-23 17:10:04 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.shjn.model.Qh" table="qh" catalog="amac" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="mpiId" type="java.lang.Long">
+            <column name="mpi_id" />
+        </property>
+        <property name="mpiProductCode" type="string">
+            <column name="mpi_product_code" length="45">
+                <comment>&#178;&#250;&#198;&#183;&#177;&#224;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="mpiName" type="string">
+            <column name="mpi_name" length="45">
+                <comment>&#178;&#250;&#198;&#183;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="aoiName" type="string">
+            <column name="aoi_name" length="45">
+                <comment>&#185;&#220;&#192;&#237;&#187;&#250;&#185;&#185;</comment>
+            </column>
+        </property>
+        <property name="mpiCreateDate" type="date">
+            <column name="mpi_create_date" length="10">
+                <comment>&#201;&#232;&#193;&#162;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="containClassification" type="java.lang.Boolean">
+            <column name="contain_classification">
+                <comment>&#178;&#250;&#198;&#183;&#195;&#251;&#179;&#198;&#214;&#208;&#202;&#199;&#183;&#241;&#211;&#208;
+                &#161;&#176;&#183;&#214;&#188;&#182;&#161;&#177;</comment>
+            </column>
+        </property>
+        <property name="containStructured" type="java.lang.Boolean">
+            <column name="contain_structured">
+                <comment>
+                &#178;&#250;&#198;&#183;&#195;&#251;&#179;&#198;&#214;&#208;&#202;&#199;&#183;&#241;&#211;&#208;&#161;&#176;&#189;&#225;&#185;&#185;&#187;&#175;&#161;&#177;</comment>
+            </column>
+        </property>
+        <property name="createTimestamp" type="timestamp">
+            <column name="create_timestamp" length="19" />
+        </property>
+        <property name="updateTimestamp" type="timestamp">
+            <column name="update_timestamp" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-23 17:10:04 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.shjn.model.Fund" table="fund" catalog="amac" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="fundId" type="java.lang.Long">
+            <column name="fund_id" />
+        </property>
+        <property name="fundName" type="string">
+            <column name="fund_name">
+                <comment>&#187;&#249;&#189;&#240;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="managerName" type="string">
+            <column name="manager_name" length="45">
+                <comment>&#203;&#189;&#196;&#188;&#187;&#249;&#189;&#240;&#185;&#220;&#192;&#237;&#200;&#203;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="establishDate" type="date">
+            <column name="establish_date" length="10">
+                <comment>&#179;&#201;&#193;&#162;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="putOnRecordDate" type="date">
+            <column name="put_on_record_date" length="10">
+                <comment>&#177;&#184;&#176;&#184;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="lastQuarterUpdate" type="java.lang.Boolean">
+            <column name="last_quarter_update">
+                <comment>&#180;&#230;&#212;&#218;&#206;&#180;&#189;&#248;&#208;&#208;&#181;&#196;&#188;&#190;&#182;&#200;&#184;&#252;&#208;&#194;</comment>
+            </column>
+        </property>
+        <property name="containClassification" type="java.lang.Boolean">
+            <column name="contain_classification">
+                <comment>&#187;&#249;&#189;&#240;&#195;&#251;&#179;&#198;&#214;&#208;&#202;&#199;&#183;&#241;&#211;&#208;&#161;&#176;&#183;&#214;&#188;&#182;&#161;&#177;</comment>
+            </column>
+        </property>
+        <property name="containStructured" type="java.lang.Boolean">
+            <column name="contain_structured">
+                <comment>
+                &#187;&#249;&#189;&#240;&#195;&#251;&#179;&#198;&#214;&#208;&#202;&#199;&#183;&#241;&#211;&#208;&#161;&#176;&#189;&#225;&#185;&#185;&#187;&#175;&#161;&#177;</comment>
+            </column>
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="45" />
+        </property>
+        <property name="createTimestamp" type="timestamp">
+            <column name="create_timestamp" length="19" />
+        </property>
+        <property name="updateTimestamp" type="timestamp">
+            <column name="update_timestamp" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

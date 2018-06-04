@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-23 17:10:04 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.shjn.model.Manager" table="manager" catalog="amac" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="managerId" type="long">
+            <column name="manager_id" not-null="true" />
+        </property>
+        <property name="managerNameC" type="string">
+            <column name="manager_name_c" length="45" not-null="true">
+                <comment>
+                &#203;&#189;&#196;&#188;&#187;&#249;&#189;&#240;&#185;&#220;&#192;&#237;&#200;&#203;&#195;&#251;&#179;&#198;&#163;&#168;&#214;&#208;&#206;&#196;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="artificialPersonName" type="string">
+            <column name="artificial_person_name" length="45">
+                <comment>
+                &#183;&#168;&#182;&#168;&#180;&#250;&#177;&#237;&#200;&#203;/&#214;&#180;&#208;&#208;&#202;&#194;&#206;&#241;&#186;&#207;&#187;&#239;&#200;&#203;</comment>
+            </column>
+        </property>
+        <property name="primaryInvestType" type="string">
+            <column name="primary_invest_type" length="45">
+                <comment>&#187;&#249;&#189;&#240;&#214;&#247;&#210;&#170;&#192;&#224;&#177;&#240;</comment>
+            </column>
+        </property>
+        <property name="registerProvince" type="string">
+            <column name="register_province" length="45">
+                <comment>&#215;&#162;&#178;&#225;&#181;&#216;</comment>
+            </column>
+        </property>
+        <property name="registerNo" type="string">
+            <column name="register_no" length="45">
+                <comment>&#181;&#199;&#188;&#199;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="establishDate" type="date">
+            <column name="establish_date" length="10">
+                <comment>&#179;&#201;&#193;&#162;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="registerDate" type="date">
+            <column name="register_date" length="10">
+                <comment>&#181;&#199;&#188;&#199;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="url" type="string">
+            <column name="url">
+                <comment>&#207;&#234;&#207;&#184;&#210;&#179;&#195;&#230;&#193;&#180;&#189;&#211;</comment>
+            </column>
+        </property>
+        <property name="fundScale" type="java.lang.Double">
+            <column name="fundScale" precision="22" scale="0">
+                <comment>&#215;&#202;&#189;&#240;&#185;&#230;&#196;&#163;&#163;&#168;&#205;&#242;&#212;&#170;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="fundCount" type="java.lang.Integer">
+            <column name="fundCount">
+                <comment>&#213;&#253;&#212;&#218;&#212;&#203;&#215;&#247;&#181;&#196;&#187;&#249;&#189;&#240;&#202;&#253;&#193;&#191;</comment>
+            </column>
+        </property>
+        <property name="createTimestamp" type="timestamp">
+            <column name="create_timestamp" length="19" />
+        </property>
+        <property name="updateTimestamp" type="timestamp">
+            <column name="update_timestamp" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

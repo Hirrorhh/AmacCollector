@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">123456</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/amac</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="com/shjn/model/Hmd.hbm.xml" />
+        <mapping resource="com/shjn/model/FundAccountDetail.hbm.xml" />
+        <mapping resource="com/shjn/model/Qh.hbm.xml" />
+        <mapping resource="com/shjn/model/Zq.hbm.xml" />
+        <mapping resource="com/shjn/model/Manager.hbm.xml" />
+        <mapping resource="com/shjn/model/Fund.hbm.xml" />
+        <mapping resource="com/shjn/model/FundDetail.hbm.xml" />
+        <mapping resource="com/shjn/model/QhDetail.hbm.xml" />
+        <mapping resource="com/shjn/model/Cxdj.hbm.xml" />
+        <mapping resource="com/shjn/model/ZqDetail.hbm.xml" />
+        <mapping resource="com/shjn/model/FundAccount.hbm.xml" />
+        <mapping resource="com/shjn/model/ManagerDetail.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

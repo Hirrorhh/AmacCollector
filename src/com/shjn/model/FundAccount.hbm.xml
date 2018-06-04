@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-23 17:10:04 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.shjn.model.FundAccount" table="fund_account" catalog="amac" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="fundAccountId" type="string">
+            <column name="fund_account_id" length="45">
+                <comment>&#215;&#168;&#187;&#167;ID</comment>
+            </column>
+        </property>
+        <property name="name" type="string">
+            <column name="name">
+                <comment>&#215;&#168;&#187;&#167;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="manager" type="string">
+            <column name="manager" length="45">
+                <comment>&#185;&#220;&#192;&#237;&#200;&#203;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="45">
+                <comment>&#215;&#168;&#187;&#167;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="registerCode" type="string">
+            <column name="register_code" length="45">
+                <comment>&#177;&#184;&#176;&#184;&#177;&#224;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="registerDate" type="date">
+            <column name="register_date" length="10">
+                <comment>&#177;&#184;&#176;&#184;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="45">
+                <comment>
+                &#161;&#176;&#210;&#187;&#182;&#212;&#182;&#224;&#161;&#177;&#181;&#196;&#187;&#249;&#189;&#240;&#215;&#168;&#187;&#167;&#178;&#250;&#198;&#183;&#193;&#180;&#189;&#211;</comment>
+            </column>
+        </property>
+        <property name="createTimestamp" type="timestamp">
+            <column name="create_timestamp" length="19" />
+        </property>
+        <property name="updateTimestamp" type="timestamp">
+            <column name="update_timestamp" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>
